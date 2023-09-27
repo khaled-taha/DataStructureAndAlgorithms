@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithms Analysis/Algorithms-Analysis.iml" filepath="$PROJECT_DIR$/Algorithms Analysis/Algorithms-Analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DataStructureAndAlgorithms.iml" filepath="$PROJECT_DIR$/.idea/DataStructureAndAlgorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problem Solving/Problem-Solving.iml" filepath="$PROJECT_DIR$/Problem Solving/Problem-Solving.iml" />
+    </modules>
+  </component>
+</project>
