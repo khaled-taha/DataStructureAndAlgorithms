@@ -12,7 +12,6 @@ public class ContainsDuplicate {
         int[] arr = {1,2,3,1};
         System.out.println(solution_1(arr));
     }
-
     public static boolean solution_1(int[] arr){ // O(n)
         // with hashset
         Set<Integer> set = new HashSet<>();
