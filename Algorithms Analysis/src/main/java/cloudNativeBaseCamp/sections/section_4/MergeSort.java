@@ -21,17 +21,17 @@ public class MergeSort {
     private static <T extends Comparable<T>> void merge(T[] arr, int start, int mid, int end) {
         T[] tempArr = Arrays.copyOfRange(arr, start, end + 1);
         int index = start;
-        int indexR = start;
-        int indexL = mid + 1;
+        int indexL = start;
+        int indexR = mid + 1;
 
-        while (indexR <= mid && indexL <= end) {
-            if (tempArr[indexR - start].compareTo(tempArr[indexL - start]) <= 0)
-                arr[index++] = tempArr[indexR++ - start];
-            else
+        while (indexL <= mid && indexR <= end) {
+            if (tempArr[indexL - start].compareTo(tempArr[indexR - start]) <= 0)
                 arr[index++] = tempArr[indexL++ - start];
+            else
+                arr[index++] = tempArr[indexR++ - start];
         }
-        while (indexR <= mid) arr[index++] = tempArr[indexR++ - start];
-        while (indexL <= end) arr[index++] = tempArr[indexL++ - start];
+        while (indexL <= mid) arr[index++] = tempArr[indexL++ - start];
+        while (indexR <= end) arr[index++] = tempArr[indexR++ - start];
     }
 
 }
