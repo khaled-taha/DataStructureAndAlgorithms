@@ -13,7 +13,7 @@ public class IsomorphicStrings {
         return firstString.size() == secondString.size();
     }
 
-        public boolean isIsomorphic(String s, String t) { // ASCII Code
+        public boolean isIsomorphic(String s, String t) { // ASCII Code : 4ms
             if (s.length() != t.length()) {
                 return false;
             }
