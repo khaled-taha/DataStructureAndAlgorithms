@@ -15,5 +15,4 @@ public class FindPivot_Index {
         }
         return -1;
     }
-
 }
