@@ -51,4 +51,14 @@ public class IsSubsequence {
         }
         return sIndex == s.length();
     }
+
+    public boolean isSubsequence3(String s, String t) {
+        if(s.length() == 0) return false;
+        int pointerS = 0;
+        for(char ch : t.toCharArray()){
+            if(ch == s.charAt(pointerS)) pointerS++;
+            if(pointerS == s.length()) return true;
+        }
+        return false;
+    }
 }
