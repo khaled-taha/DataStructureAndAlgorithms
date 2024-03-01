@@ -20,4 +20,21 @@ public class LongestCommonPrefix {
         }
         return builder.toString();
     }
+
+    public static String solution2(String[] strs) {
+        if(strs.length == 1) return strs[0];
+        int minLength = 200;
+        StringBuilder prefix = new StringBuilder();
+        for(String str : strs) minLength = Math.min(str.length(), minLength);
+
+        for (int i = 0; i < minLength; i++) {
+            char ch = strs[0].charAt(i);
+            for (int j = 1; j < strs.length; j++) {
+                if(strs[j].charAt(i) != ch) return prefix.toString();
+            }
+            prefix.append(ch);
+        }
+        return prefix.toString();
+    }
+
 }
