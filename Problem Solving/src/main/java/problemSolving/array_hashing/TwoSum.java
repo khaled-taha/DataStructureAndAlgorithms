@@ -46,5 +46,17 @@ public class TwoSum {
         }
         return null;
     }
+    public static int[] solution2(int[] nums, int target) {
+        Map<Integer, Integer> numIndexMapping = new HashMap<>();
+        int secondIndex;
+        for(int i = 0; i < nums.length; i++) {
+            secondIndex = numIndexMapping.getOrDefault(target - nums[i], -1);
+            if(secondIndex != -1){
+                return new int[]{i, secondIndex};
+            }
+            numIndexMapping.put(nums[i], i);
+        }
+        return null;
+    }
 }
 
